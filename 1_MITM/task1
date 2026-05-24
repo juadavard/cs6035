@@ -1,0 +1,40 @@
+https://github.gatech.edu/pages/cs6035-tools/cs6035-tools.github.io/Projects/MiTM/Flag1.html
+
+https://datatracker.ietf.org/doc/html/rfc1459#section-4.4.1
+
+1.1
+filtering in wireshark by protocol irc
+577 packets
+
+76376	343.438872	64.86.243.186	10.0.0.7	IRC	2934	Response (@time=2026-01-06T20:21:36.020Z) (@time=2026-01-06T20:21:36.020Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z) (@time=2026-01-06T20:21:36.021Z)
+
+
+@time=2026-01-06T20:21:36.020Z :calcium.libera.chat 002 MestreDosMagos :Your host is calcium.libera.chat[64.86.243.186/6667], running version solanum-1.0-dev
+
+
+RESPONSE:calcium.libera.chat
+1.2
+There is a WHO listing all actors at the beggining
+Mestresdosmangos....
+1.3
+JOIN #
+PRIVMSG #tnc26 :exactly. but looks like after it took control of the honeypot, it ended up opening a reverse shell and taking control of whomever was connected there
+
+RESPONSE #tnc26
+
+1.4
+hash value
+241087
+
+
+
+1.5
+
+
+
+Command: PRIVMSG
+Parameters: <receiver>{,<receiver>} <text to be sent>
+
+PRIVMSG jto@tolsun.oulu.fi :Hello ! ; Message to a client on server
+
+Command: PONG Parameters: <daemon> [<daemon2>]
