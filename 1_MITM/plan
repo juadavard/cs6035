@@ -15,3 +15,17 @@ Start doing 5 and let running jhon the ripper
 Do 1 - 4, read documentation on wireshark and make a plan to analysis
 and maybe mark by actions / status
 there are multiple stages in the conversation mark them
+
+
+ftp or irc and ( irc.response.command != "PONG" and irc.request.command != "PONG" and irc.request.command != "PING" and  irc.response.command != "PING" )
+
+
+ftp or (irc and !(irc.request.command == "PING" or irc.request.command == "PONG"))
+
+ftp or ftp-data or (irc and !(irc.request.command == "PING" or irc.request.command == "PONG" or irc.response.command == "PING" or irc.response.command == "PONG"))
+
+this one works
+ftp or ftp-data or (irc and !(irc.request.command == "PING" or irc.request.command == "PONG" or irc.response.command == "PING" or irc.response.command == "PONG" or irc.response.trailer contains "PONG"))
+
+Current working one
+ftp or ftp-data or (irc and !(irc.request.command == "PING" or irc.request.command == "PONG" or irc.response.command == "PING" or irc.response.command == "PONG" or irc.response.trailer contains "PONG"))
