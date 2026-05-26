@@ -29,3 +29,15 @@ ftp or ftp-data or (irc and !(irc.request.command == "PING" or irc.request.comma
 
 Current working one
 ftp or ftp-data or (irc and !(irc.request.command == "PING" or irc.request.command == "PONG" or irc.response.command == "PING" or irc.response.command == "PONG" or irc.response.trailer contains "PONG"))
+
+
+
+
+459
+tcp.stream eq 459 or ftp or ftp-data or (http and ip.src == 10.0.0.7 )
+
+DCC SEND file_2600.guess.txt 199 0 955 191.
+DCC SEND file_2600.guess.txt 167772164 61610 955 191.
+
+tcp.stream eq 459 or ftp or ftp-data or (tcp and tcp.dstport ==61610 ) 
+
