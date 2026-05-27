@@ -66,5 +66,7 @@ Ek2dXjBt7EUcmDCd+zm0LRWl
 -----END PGP MESSAGE-----
 sf....
 
+(tcp or udp) and ip.addr != 168.63.129.16 and ip.addr != 169.254.169.254
+
 
 
