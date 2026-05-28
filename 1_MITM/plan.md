@@ -144,3 +144,33 @@ Session completed
 testbed@testbed:~/MITM$ ~/john/run/john --mask=?d?d?d?d?d?d?d zip_hash.txt --show
 
 
+ cat script.py 
+aW1wb3J0IGhhc2hsaWINCg0KDQpkZWYgZ2VuZXJhdGVfaGFzaChndGlkKToNCiAgICAjIEdlbmVyYXRlcyBhIGNvbWJpbmVkIFNIQS0yNTYgaGFzaCBiYXNlZCBvbiBHVElEIGFuZCBhIHNlY3JldCBzdHJpbmcNCiAgICBndGlkX2hhc2ggPSBoYXNobGliLnNoYTI1NihndGlkLmVuY29kZSgpKS5oZXhkaWdlc3QoKQ0KICAgIHNlY3JldF9oYXNoID0gaGFzaGxpYi5zaGEyNTYoYiJDUzYwMzUtU1AyMDI2LUJZNSIpLmhleGRpZ2VzdCgpDQogICAgcmV0dXJuIGd0aWRfaGFzaCArIHNlY3JldF9oYXNoDQoNCg0KZGVmIG1haW4oKToNCiAgICBwcmludCgiPT09PSBZb3UgZm91bmQgRmxhZyA1LjMhID09PT0iKQ0KICAgIGd0aWQgPSBpbnB1dCgiRW50ZXIgeW91ciBHVElEOiAiKS5zdHJpcCgpDQogICAgaWYgbm90IGd0aWQ6DQogICAgICAgIHByaW50KCJFcnJvcjogR1RJRCBjYW5ub3QgYmUgZW1wdHkuIFBsZWFzZSB0cnkgYWdhaW4uIikNCiAgICAgICAgcmV0dXJuDQogICAgZmluYWxfaGFzaCA9IGdlbmVyYXRlX2hhc2goZ3RpZCkNCiAgICBwcmludCgiWW91ciBoYXNoIGlzOiIsIGZpbmFsX2hhc2gpDQoNCg0KaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoNCiAgICBtYWluKCkNCg==testbed@testbed:~/MITM/output$ python
+Command 'python' not found, did you mean:
+
+base64 -d script.py > decoded.py
+
+testbed@testbed:~/MITM/output$ cat decoded.py 
+import hashlib
+
+
+def generate_hash(gtid):
+    # Generates a combined SHA-256 hash based on GTID and a secret string
+    gtid_hash = hashlib.sha256(gtid.encode()).hexdigest()
+    secret_hash = hashlib.sha256(b"CS6035-SP2026-BY5").hexdigest()
+    return gtid_hash + secret_hash
+
+
+def main():
+    print("==== You found Flag 5.3! ====")
+    gtid = input("Enter your GTID: ").strip()
+    if not gtid:
+        print("Error: GTID cannot be empty. Please try again.")
+        return
+    final_hash = generate_hash(gtid)
+    print("Your hash is:", final_hash)
+
+
+if __name__ == "__main__":
+    main()
+
