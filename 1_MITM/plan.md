@@ -39,9 +39,11 @@ tcp.stream eq 459 or ftp or ftp-data or (http and ip.src == 10.0.0.7 )
 DCC SEND file_2600.guess.txt 199 0 955 191.
 DCC SEND file_2600.guess.txt 167772164 61610 955 191.
 
+Conversation
 tcp.stream eq 459 or ftp or ftp-data or (tcp and tcp.dstport ==61610 ) 
 
 
+Transmission of Code 1
 tcp.stream eq 2617
 
 
@@ -69,4 +71,32 @@ sf....
 (tcp or udp) and ip.addr != 168.63.129.16 and ip.addr != 169.254.169.254
 
 
+
+
+Some type of hash
+tcp.stream eq 3408
++.
+......\i..........................F.....^.R.I.t.R...t.R...t.R...t.R...t.].R.8X..d
+....].!.4.........R.#.R.#.)......Nc.....................j.....V.P...................4.......p.\.........P...................!.V.4.......P...................4.......#.).N)...encode..hashlib..sha256.	hexdigest)...input_value.
+encoded_inputs....& ..flag4.py.
+obscure_inputr........s(..........&..&..(.M....>.>.-..(..2..2..4..4.....c.....................N.....R.p.\.........P...................!.V.4.......P...................4.......#.).s...._CS6035-FlaG_-Nova).r....r....r....)..
+secret_keys.... r
+.....obscure_constantr........s........&.J....>.>.*..%../../..1..1r....c...........................R.P...................\.........\.........V.4.......4.........U.u...u.F ..q"^.,...........^.8X..d	....W.,...........M.W.,...........N.K"..	...u.p.4.......#.u...u.p.i.)...)...join..range..len)...hash1..hash2..is....&& r
+.....combine_hashesr........s?.......
+.7.7.%...E.
+.BS..T.BS.Q.A.....
+.E.H......8.BS..T..U..U...Ts.....&A..c...........................\.........R.4.........\.........R.4.......P...................4.......p.V.'.......g.....\.........R.4.........R.#.\.........V.4.......p.\	........4.......p.\.........W.4.......p.\.........R.V.4.........R.#.).z.==== You found Flag 4! ====z.Enter your GTID : z.Error: GTID cannot be empty.Nz.Combined hash   :  )...print..input..stripr....r....r....)...u_input.
+first_hash..second_hash..combineds....    r
+.....mainr!.......s[.......	.
+'..(.......(..)../../..1.G.....
+..,..-.........w..'.J.."..$.K....j..6.H....
+.
+.....*r......__main__).r....r....r....r....r!.....__name__..r....r
+.....<module>r%.......s3.................5....2....V.....+.$....z.......F.....r....
+
+
+197177	5289.969361	10.0.0.7	20.109.1.166	HTTP	588	GET / HTTP/1.1 
+http://www.necrocryptors.com/
+
+2997c303034c112bb92cdefe60e078197c6046492762c13378a35a69eeaf347998636436cb8ce57c7432cef6469ed245532438f98af559ede98727a5ce194c70
 
