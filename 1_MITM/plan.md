@@ -104,6 +104,14 @@ http://www.necrocryptors.com/
 
 2997c303034c112bb92cdefe60e078197c6046492762c13378a35a69eeaf347998636436cb8ce57c7432cef6469ed245532438f98af559ede98727a5ce194c70
 
+---
+frame.time >= "Jan 6, 2026 21:37:00" &&
+frame.time <= "Jan 6, 2026 21:48:00" and dns and dns.qry.name contains "necro"
+
+196516	5286.968418	168.63.129.16	10.0.0.7	DNS	97	Standard query response 0x5e19 A www.necrocryptors.com A 20.109.1.166
+
+196514	5286.961511	168.63.129.16	10.0.0.7	DNS	171	Standard query response 0xe541 HTTPS www.necrocryptors.com SOA ns-cloud-e1.googledomains.com
+
 ----
 1.5
 227614	5737.247920	64.86.243.186	10.0.0.7	IRC	151	Response (@time=2026-01-06T21:51:29.834Z)
