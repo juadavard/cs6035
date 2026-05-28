@@ -109,3 +109,25 @@ http://www.necrocryptors.com/
 227614	5737.247920	64.86.243.186	10.0.0.7	IRC	151	Response (@time=2026-01-06T21:51:29.834Z)
 @time=2026-01-06T21:51:29.834Z :ByteRunner!~SolarFlar@52.166.115.95 PRIVMSG MestreDosMagos :hey
 
+
+---
+
+tcp.port == 54658
+tcp.stream eq 675
+
+howdy
+whats up man
+ok you know the drill. confirm you are really hackpt
+Bc6e547fa5333adf8709439a92a484d9
+thats not right
+ugh forgot to generate the new one
+1 sec
+NzkgNmYgNzUgMjAgNjYgNmYgNzUgNmUgNjQgMjAgNzQgNjggNjUgMjAgNjYgNmMgNjEgNj
+nop
+NzkgNmYgNzUgMjAgNjYgNmYgNzUgNmUgNjQgMjAgNzQgNjggNjUgMjAgNjYgNmMgNjEgNjc
+got it npw
+*now
+ok back to the convo?
+
+
+~/john/run/john --mask=?d?d?d?d?d?d?d zip_hash.txt
