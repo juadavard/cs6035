@@ -131,3 +131,16 @@ ok back to the convo?
 
 
 ~/john/run/john --mask=?d?d?d?d?d?d?d zip_hash.txt
+0901009          (password_protected.zip/script.py)     
+Using default input encoding: UTF-8
+Loaded 1 password hash (ZIP, WinZip [PBKDF2-SHA1 256/256 AVX2 8x])
+Cost 1 (HMAC size [KiB]) is 1 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, 'h' for help, almost any other key for status
+0901009          (password_protected.zip/script.py)     
+1g 0:00:00:51 DONE (2026-05-28 16:56) 0.01926g/s 79206p/s 79206c/s 79206C/s 2709109..3632009
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+testbed@testbed:~/MITM$ ~/john/run/john --mask=?d?d?d?d?d?d?d zip_hash.txt --show
+
+
