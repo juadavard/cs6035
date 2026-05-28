@@ -1,31 +1,32 @@
 {
   "task1.1": "irc.darknet.tld", //Example
   "task1.1": "calcium.libera.chat",
-  "task1.2": "BigBird,CookieMonster,OscarTheGrouch",//Example
+  "task1.2": "BigBird,CookieMonster,OscarTheGrouch", //Example
   "task1.2": "PingWizar,HackPT,ByteRunner",
-  "task1.3": "#secretroom",//Example
+  "task1.3": "#secretroom", //Example
   "task1.3": "##tnc26",
-  "task1.4": "a12342342bcde393202013434",//Example
-  "task1.4": "1767731093",//Example
-  "task1.5": "Atlantis",//Example
-  "task2.1": "shadowfox",//Example
-  "task2.2": "payload.zip",//Example
-  "task2.3": "AES",//Example
-  "task2.4": "4a8fd3c0dd22a79b93e5a4e1d1eac092",//Example
-  "task3.1": "server.undernet.tld",//Example
-  "task3.2": "203.0.113.42",//Example
-  "task3.3": "ns1.undernet.tld",//Example
-  "task3.4": "e4820b45d2277f3844eac66c903e84be",//Example
-  "task4.1": "192.168.8.7",//Example
-  "task4.2": "h4x0r",//Example
-  "task4.3": "1337420",//Example
-  "task4.4": "malicious.py",//Example
-  "task4.5": "python",//Example
-  "task4.6": "12123123129413249121249aa",//Example
-  "task5.1": "tr95843fkdspugr8euyre0gfd",//Example
-  "task5.2": "4571982",//Example
-  "task5.3": "58437594ejgfdiohr8e054309",//Example
-  "task7.1": "255.255.255.255",//Example
-  "task7.2": "127.0.0.1",//Example
-  "task7.3": "captureallthepackets"//Example
+  "task1.4": "a12342342bcde393202013434", //Example
+  "task1.4": "1767731093", //Example
+  "task1.5": "Atlantis", //Example
+  "task1.5": "Netherlands", //Example
+  "task2.1": "shadowfox", //Example
+  "task2.2": "payload.zip", //Example
+  "task2.3": "AES", //Example
+  "task2.4": "4a8fd3c0dd22a79b93e5a4e1d1eac092", //Example
+  "task3.1": "server.undernet.tld", //Example
+  "task3.2": "203.0.113.42", //Example
+  "task3.3": "ns1.undernet.tld", //Example
+  "task3.4": "e4820b45d2277f3844eac66c903e84be", //Example
+  "task4.1": "192.168.8.7", //Example
+  "task4.2": "h4x0r", //Example
+  "task4.3": "1337420", //Example
+  "task4.4": "malicious.py", //Example
+  "task4.5": "python", //Example
+  "task4.6": "12123123129413249121249aa", //Example
+  "task5.1": "tr95843fkdspugr8euyre0gfd", //Example
+  "task5.2": "4571982", //Example
+  "task5.3": "58437594ejgfdiohr8e054309", //Example
+  "task7.1": "255.255.255.255", //Example
+  "task7.2": "127.0.0.1", //Example
+  "task7.3": "captureallthepackets" //Example
 }

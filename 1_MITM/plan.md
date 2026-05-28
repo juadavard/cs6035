@@ -31,7 +31,7 @@ Current working one
 ftp or ftp-data or (irc and !(irc.request.command == "PING" or irc.request.command == "PONG" or irc.response.command == "PING" or irc.response.command == "PONG" or irc.response.trailer contains "PONG"))
 
 
-
+----------
 
 459
 tcp.stream eq 459 or ftp or ftp-data or (http and ip.src == 10.0.0.7 )
@@ -42,6 +42,7 @@ DCC SEND file_2600.guess.txt 167772164 61610 955 191.
 Conversation
 tcp.stream eq 459 or ftp or ftp-data or (tcp and tcp.dstport ==61610 ) 
 
+----------
 
 Transmission of Code 1
 tcp.stream eq 2617
@@ -70,8 +71,7 @@ sf....
 
 (tcp or udp) and ip.addr != 168.63.129.16 and ip.addr != 169.254.169.254
 
-
-
+--------
 
 Some type of hash
 tcp.stream eq 3408
@@ -94,9 +94,18 @@ first_hash..second_hash..combineds....    r
 .....*r......__main__).r....r....r....r....r!.....__name__..r....r
 .....<module>r%.......s3.................5....2....V.....+.$....z.......F.....r....
 
+------
+
+frame.time >= "Jan 6, 2026 21:37:00" &&
+frame.time <= "Jan 6, 2026 21:48:00" and http
 
 197177	5289.969361	10.0.0.7	20.109.1.166	HTTP	588	GET / HTTP/1.1 
 http://www.necrocryptors.com/
 
 2997c303034c112bb92cdefe60e078197c6046492762c13378a35a69eeaf347998636436cb8ce57c7432cef6469ed245532438f98af559ede98727a5ce194c70
+
+----
+1.5
+227614	5737.247920	64.86.243.186	10.0.0.7	IRC	151	Response (@time=2026-01-06T21:51:29.834Z)
+@time=2026-01-06T21:51:29.834Z :ByteRunner!~SolarFlar@52.166.115.95 PRIVMSG MestreDosMagos :hey
 
