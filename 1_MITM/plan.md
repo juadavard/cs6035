@@ -332,6 +332,12 @@ BoobyTables
 172.171.247.132|0|1|5|5|570|665
 91.196.152.1|1|1|2|1|218|74
 
+BoobyTables
+| where SrcPublicIps == "10.0.0.99"
+| project packet_data, SrcPublicIps
+
+
+
 
 import hashlib
 
