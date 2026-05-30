@@ -20,7 +20,7 @@ class MITMProject(object):
 
         # TODO: Change this to YOUR Georgia Tech ID!!!
         # This is your 9-digit Georgia Tech ID
-        self.student_id = ''
+        self.student_id = '904203773'
 
     def get_student_hash(self, value):
         return hashlib.sha256(self.student_id.encode('UTF-8') + self.class_id + value).hexdigest()
@@ -31,18 +31,26 @@ class MITMProject(object):
     def icmp_count(self):
         n = 0
         # TODO: Implement me 
-
+        filtered = pyshark.FileCapture('flag6.pcap', display_filter="icmp")
+        for packet in filtered:
+            n = n + 1
         return n
 
     # TODO: 
     #   Task 2: Return r,a, being:
     #       r = Number of ICMP Echo Requests
     #       a = ICMP Echo Reply
+
+    #https://datatracker.ietf.org/doc/html/rfc792
     def icmp_request_reply(self):
         r = 0
         a = 0
-        # TODO: Implement me 
-
+        filtered = pyshark.FileCapture('flag6.pcap', display_filter="icmp")
+        for packet in filtered:
+            if int(packet.icmp.type) == 8:
+                r = r + 1
+            elif int(packet.icmp.type) == 0:
+                a = a + 1
         return r,a 
 
     # TODO: 
@@ -50,8 +58,25 @@ class MITMProject(object):
     #       m = Most Common Destination MAC Address
     #       n = Number of Occurrences
     def dest_mac(self):
-        m,n = 0,0 
+        n = 0 
+        m = ""
       # TODO: Implement me 
+        macs = {}
+        filtered = pyshark.FileCapture('flag6.pcap')
+        for packet in filtered:
+            if packet.eth.dst in macs:
+                macs[str(packet.eth.dst)] = macs[str(packet.eth.dst)] + 1
+            else:
+                macs[str(packet.eth.dst)] = 0
+        
+        for addr in macs:
+            if m == "":
+                m = addr
+                n = macs[addr]
+            else:
+                if macs[addr] > n:
+                    m = addr
+                    n = macs[addr]
 
         return m,n
 
