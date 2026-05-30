@@ -263,6 +263,11 @@ def main():
 if __name__ == "__main__":
     main()
 
+ python3 53.py
+==== You found Flag 5.3! ====
+Enter your GTID: 904203773
+Your hash is: 2997c303034c112bb92cdefe60e078197c6046492762c13378a35a69eeaf34794f6cefc1f3f6fe4e9f89a2cc6791196b6c379e15aea27d1a22a029a0a198ac0a
+
 
 ----
 ftp or ftp-data
