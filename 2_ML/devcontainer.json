@@ -8,7 +8,7 @@
       "upgradePackages": "true"
     }
   },
-  "postCreateCommand": "conda config --set remote_read_timeout_secs 180.0 && conda env create -f 2_ML/env.yml && sudo apt-get update && sudo apt-get install -y zip && git config --global --add safe.directory /workspaces/cs6035",
+  "postCreateCommand": "conda config --set remote_read_timeout_secs 180.0 && conda env create -f 2_ML/env.yml && sudo apt-get update && sudo apt-get install -y zip git-lfs && git lfs install && git config --global --add safe.directory /workspaces/cs6035",
   "postAttachCommand": "conda init bash",
   "customizations": {
     "vscode": {
