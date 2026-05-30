@@ -1,8 +1,14 @@
 {
   "name": "CS6035 Machine Learning Project",
   "image": "continuumio/miniconda3",
-  "features": {},
-  "postCreateCommand": "conda config --set remote_read_timeout_secs 180.0 && conda env create -f env.yml",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "false",
+      "installOhMyZsh": "false",
+      "upgradePackages": "true"
+    }
+  },
+  "postCreateCommand": "conda config --set remote_read_timeout_secs 180.0 && conda env create -f 2_ML/env.yml && sudo apt-get update && sudo apt-get install -y zip && git config --global --add safe.directory /workspaces/cs6035",
   "postAttachCommand": "conda init bash",
   "customizations": {
     "vscode": {
