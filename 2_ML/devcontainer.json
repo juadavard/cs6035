@@ -1,0 +1,21 @@
+{
+  "name": "CS6035 Machine Learning Project",
+  "image": "continuumio/miniconda3",
+  "features": {},
+  "postCreateCommand": "conda config --set remote_read_timeout_secs 180.0 && conda env create -f env.yml",
+  "postAttachCommand": "conda init bash",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.debugpy"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/envs/cs6035_ML/bin/python"
+      }
+    }
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/opt/conda/bin:/opt/conda/condabin"
+  }
+}
