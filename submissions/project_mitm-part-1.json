@@ -10,9 +10,13 @@
   "task1.5": "Atlantis", //Example
   "task1.5": "Netherlands",
   "task2.1": "shadowfox", //Example
+  "task2.1": "HackPT",
   "task2.2": "payload.zip", //Example
+  "task2.2": "file_2600.guess.txt",
   "task2.3": "AES", //Example
+  "task2.3": "RSA",
   "task2.4": "4a8fd3c0dd22a79b93e5a4e1d1eac092", //Example
+  "task2.4": "2997c303034c112bb92cdefe60e078197c6046492762c13378a35a69eeaf347965b8ebea0a94230f6391992af4db4459d842403cece9b38dcfa35ecac6c5c884",
   "task3.1": "server.undernet.tld", //Example
   "task3.1": "www.necrocryptors.com",
   "task3.2": "203.0.113.42", //Example
@@ -30,7 +34,9 @@
   "task4.4": "malicious.py", //Example
   "task4.4": "file_5324.bn",
   "task4.5": "python", //Example
+  "task4.5": "python",
   "task4.6": "12123123129413249121249aa", //Example
+  "task4.6": "2f98cd0902421c2abb23d2ff65e47a1e7f67484a206ac73e78a95e64e3a3387a",
   "task5.1": "tr95843fkdspugr8euyre0gfd", //Example
   "task5.2": "4571982", //Example
   "task5.3": "58437594ejgfdiohr8e054309", //Example
