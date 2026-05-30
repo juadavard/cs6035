@@ -67,7 +67,7 @@ class MITMProject(object):
             if packet.eth.dst in macs:
                 macs[str(packet.eth.dst)] = macs[str(packet.eth.dst)] + 1
             else:
-                macs[str(packet.eth.dst)] = 0
+                macs[str(packet.eth.dst)] = 1
         
         for addr in macs:
             if m == "":

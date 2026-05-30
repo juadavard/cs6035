@@ -310,3 +310,62 @@ Combined hash   :   2f98cd0902421c2abb23d2ff65e47a1e7f67484a206ac73e78a95e64e3a3
 
 
 -------
+
+
+
+BoobyTables
+| project SrcPublicIps, BytesSrcToDest
+| summarize  Talker = sum(BytesSrcToDest ) by SrcPublicIps
+| order by Talker
+
+
+BoobyTables
+| where DestPort in (80,443)
+| summarize Port = make_set(DestPort) by SrcPublicIps
+
+
+192.168.1.10 X
+10.0.0.99
+52.136.4.16|1|1|1|1|128|60
+40.87.182.8|1|1|1|1|128|60
+
+172.171.247.132|0|1|5|5|570|665
+91.196.152.1|1|1|2|1|218|74
+
+
+import hashlib
+
+def obscure_input(input_value):
+    encoded_input = input_value.encode()
+    return hashlib.sha256(encoded_input).hexdigest()
+
+def obscure_constant():
+    secret_key = b"_CS6035-Kust0-Qu3rYL33t"
+    return hashlib.sha256(secret_key).hexdigest()
+
+def main():
+    print("==== You found Flag 7! ====")
+    
+    # Input prompt for GTID
+    u_input = input("Enter your GTID : ").strip()
+
+    if not u_input:
+        print("Error: GTID cannot be empty.")
+        return
+
+    # Obfuscated hash generation
+    first_hash = obscure_input(u_input)
+    second_hash = obscure_constant()
+    
+    # Concatenating the hashes directly
+    combined = first_hash + second_hash
+
+    # Displaying the final combined hash
+    print("Combined hash   :  ", combined)
+
+if __name__ == "__main__":
+    main()
+
+==== You found Flag 7! ====
+Enter your GTID : 904203773
+Combined hash   :   2997c303034c112bb92cdefe60e078197c6046492762c13378a35a69eeaf3479f2ac2d53d234f75ffd43b641e7fba4d15974dfe54c694ed26d4279e6eafb48a6

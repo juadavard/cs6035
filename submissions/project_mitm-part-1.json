@@ -41,6 +41,9 @@
   "task5.2": "4571982", //Example
   "task5.3": "58437594ejgfdiohr8e054309", //Example
   "task7.1": "255.255.255.255", //Example
+  "task7.1": "192.168.1.10",
   "task7.2": "127.0.0.1", //Example
+  "task7.2": "127.0.0.1",
   "task7.3": "captureallthepackets" //Example
+  "task7.3": "2997c303034c112bb92cdefe60e078197c6046492762c13378a35a69eeaf3479f2ac2d53d234f75ffd43b641e7fba4d15974dfe54c694ed26d4279e6eafb48a6"
 }
