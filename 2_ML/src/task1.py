@@ -1,16 +1,16 @@
 import numpy as np
 import pandas as pd
+
 def find_data_type(dataset:pd.DataFrame,column_name:str) -> np.dtype:
-    # TODO: Read https://github.gatech.edu/pages/cs6035-tools/cs6035-tools.github.io/Projects/Machine_Learning/Task1.html and implement the function as described
-    return np.dtype()
+    return dataset[column_name].dtypes
 
+# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.reindex.html
 def set_index_col(dataset:pd.DataFrame,index:pd.Series) -> pd.DataFrame:
-    # TODO: Read https://github.gatech.edu/pages/cs6035-tools/cs6035-tools.github.io/Projects/Machine_Learning/Task1.html and implement the function as described
-    return pd.DataFrame()
+    return dataset.reindex(index)
 
+# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.reset_index.html#pandas.DataFrame.reset_index
 def reset_index_col(dataset:pd.DataFrame) -> pd.DataFrame:
-    # TODO: Read https://github.gatech.edu/pages/cs6035-tools/cs6035-tools.github.io/Projects/Machine_Learning/Task1.html and implement the function as described
-    return pd.DataFrame()
+    return dataset.reset_index(drop=True)
 
 def set_col_type(dataset:pd.DataFrame,column_name:str,new_col_type:type) -> pd.DataFrame:
     # TODO: Read https://github.gatech.edu/pages/cs6035-tools/cs6035-tools.github.io/Projects/Machine_Learning/Task1.html and implement the function as described
