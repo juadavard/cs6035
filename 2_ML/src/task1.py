@@ -53,7 +53,7 @@ def find_dataset_statistics(dataset:pd.DataFrame,label_col:str) -> tuple[int,int
     
     n_records = dataset.size() # TODO
     n_columns = dataset.columns().size # TODO
-    n_negative = dataset[label].gt(0) # TODO
+    n_negative = dataset.gt(0) # TODO
     n_positive = int # TODO
     perc_positive =  int# TODO
 

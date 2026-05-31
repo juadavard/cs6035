@@ -2,16 +2,17 @@ import numpy as np
 import pandas as pd
 import sklearn.model_selection
 
+#https://www.geeksforgeeks.org/machine-learning/stratified-sampling-in-machine-learning/
+#https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
 def tts(  dataset: pd.DataFrame,
                        label_col: str, 
                        test_size: float,
                        should_stratify: bool,
                        random_state: int) -> tuple[pd.DataFrame,pd.DataFrame,pd.Series,pd.Series]:
-    # TODO: Read the function description in https://github.gatech.edu/pages/cs6035-tools/cs6035-tools.github.io/Projects/Machine_Learning/Task2.html and implement the function as described
-    train_features = pd.DataFrame()
-    test_features = pd.DataFrame()
-    train_labels = pd.Series()
-    test_labels = pd.Series()
+    
+    X, y = dataset.drop(label_col, axis=1), dataset[label_col]
+    stratify = y if should_stratify else None
+    train_features, test_features, train_labels, test_labels = sklearn.model_selection.train_test_split(X, y, test_size=test_size, random_state=random_state, stratify=stratify)
     return train_features,test_features,train_labels,test_labels
 
 class PreprocessDataset:
@@ -22,11 +23,13 @@ class PreprocessDataset:
                  feature_engineering_functions:dict
                  ):
         # TODO: Add any state variables you may need to make your functions work
+
         return
 
     def one_hot_encode_columns_train(self,train_features:pd.DataFrame) -> pd.DataFrame:
         # TODO: Read the function description in https://github.gatech.edu/pages/cs6035-tools/cs6035-tools.github.io/Projects/Machine_Learning/Task2.html and implement the function as described
         one_hot_encoded_dataset = pd.DataFrame()
+        
 
         return one_hot_encoded_dataset
 
